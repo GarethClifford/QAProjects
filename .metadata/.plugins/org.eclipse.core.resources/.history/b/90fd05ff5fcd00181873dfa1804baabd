@@ -1,0 +1,26 @@
+package com.qa.Goldilock;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main( String[] args )
+	
+	int Number = 1;
+    {
+        List<Chair> Table = new ArrayList<Chair>();
+        
+        Table.add(Chair(30,50));
+        Table.add(Chair(130, 60));
+        Table.add(Chair(90, 60));
+        
+        Table.stream().sorted(s -> Goldilocks.canSit(s)).collect(Collectors.
+        
+        
+    }
+}

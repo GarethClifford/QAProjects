@@ -1,0 +1,36 @@
+
+public class Calculator {
+
+	public static void calculate(int x, int y, int z) {
+		if (x * y == z) {
+			System.out.println(Integer.toString(x) + "*" + Integer.toString(y) + "=" + Integer.toString(z));
+		}
+		if (x + y == z) {
+			System.out.println(Integer.toString(x) + "+" + Integer.toString(y) + "=" + Integer.toString(z));
+		}
+		if (x - y == z) {
+			System.out.println(Integer.toString(x) + "-" + Integer.toString(y) + "=" + Integer.toString(z));
+		}
+		if (x / y == z) {
+			System.out.println(Integer.toString(x) + "/" + Integer.toString(y) + "=" + Integer.toString(z));
+		}
+	}
+
+	public static void calculator(int x, int y, int z) {
+		calculate(x, y, z);
+		calculate(x, z, y);
+		calculate(y, z, x);
+		calculate(y, x, z);
+		calculate(z, x, y);
+		calculate(z, y, x);
+
+	}
+	
+	public static void calculator(int w, int x, int y, int z) {
+		calculator(x,y,z);
+		calculator(y,z,w);
+		calculator(z,w,x);
+		calculator(w,x,y);
+	}
+
+}

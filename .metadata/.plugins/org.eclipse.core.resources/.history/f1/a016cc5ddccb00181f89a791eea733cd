@@ -1,0 +1,14 @@
+package com.qa.ExamResults;
+
+public class Logic {
+	static Subject Percentage = a -> (a * 100 / 450);
+
+
+	public static double result(double a, Subject subject) {
+		return subject.result(a);
+	}
+
+	interface Subject {
+		double result(double a);
+	}
+}

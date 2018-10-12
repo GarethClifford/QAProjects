@@ -1,0 +1,14 @@
+package com.qa.Goldilock;
+
+public class Chair {
+	private int capacity;
+	private int temp;
+	
+	public Chair(int capacity, int temp) {
+		this.capacity = capacity;
+		this.temp = temp;
+	}
+	
+	
+	
+}

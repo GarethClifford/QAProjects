@@ -1,0 +1,17 @@
+package com.qa.Goldilock;
+
+public class Goldilocks {
+
+	private int mass;
+	private int fortitude;
+
+	public Goldilocks(int mass, int fortitude) {
+		this.mass = mass;
+		this.fortitude = fortitude;
+	}
+
+	public boolean canSit(Chair chair) {
+		return (mass < Chair.getCapacity() && fortitude > Chair.getTemp());
+	}
+
+}

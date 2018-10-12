@@ -1,0 +1,17 @@
+package com.qa.Person;
+
+public class Runner {
+
+	public static void main(String[] args) {
+
+		Person p1 = new Person("Gareth", "QA Consultant", 23);
+		Person p2 = new Person("Joseph", "QA Consultant", 24);
+		Person p3 = new Person("Ben", "QA Consultant", 25);
+		Person p4 = new Person("Harrison", "QA Consultant", 21);
+		Person p5 = new Person("Vinul", "QA Consultant", 23);
+
+		System.out.println(p1.toString());
+
+	}
+
+}

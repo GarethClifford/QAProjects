@@ -1,0 +1,20 @@
+
+public class Runner {
+
+	public static void main(String[] args) {
+
+		checkstringMatch("Hello World!");
+	}
+	public static boolean checkstringMatch(String a) {
+		if (a == "Hello World!")
+		{
+			return true;
+		
+		}else {
+		
+			return false;
+		}
+	}
+	
+	
+}

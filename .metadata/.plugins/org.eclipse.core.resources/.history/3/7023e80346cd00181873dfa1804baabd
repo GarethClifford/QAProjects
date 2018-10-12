@@ -1,0 +1,9 @@
+package com.qa.Blackjack;
+
+public class BlackjackTest {
+
+	@Test
+	public void testBlackjack() {
+
+	}
+}

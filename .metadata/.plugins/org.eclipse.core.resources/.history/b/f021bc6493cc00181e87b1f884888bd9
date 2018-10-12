@@ -1,0 +1,13 @@
+package com.qa.Garage;
+
+public class Plane extends Vehicle {
+
+	public int numberOfEngines;
+	public boolean isItPrivate;
+
+	public Plane(int numberofwheels, String methodoftransport, int numberofengines, boolean isitprivate) {
+		super(numberofwheels, methodoftransport);
+		this.numberOfEngines = numberofengines;
+		this.isItPrivate = isitprivate;
+	}
+}

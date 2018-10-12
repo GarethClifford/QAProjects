@@ -1,0 +1,27 @@
+package com.qa.Garage;
+
+public class Motorcycle extends Vehicle {
+
+	private String sizeOfEngine;
+	private boolean hasStablisers;
+
+	public Motorcycle(int numberofwheels, String methodoftransport, String sizeofengine, boolean hasstablisers) {
+		super(numberofwheels, methodoftransport);
+		this.sizeOfEngine = sizeofengine;
+		this.hasStablisers = hasstablisers;
+		this.numberOfWheels = numberofwheels;
+		this.methodOfTransport = methodoftransport;
+	}
+	
+
+	@Override
+	public String toString() {
+		String result = "";
+		if (this.hasStablisers) {
+			result = "has ";
+		} else if (!this.hasStablisers) {
+			result = "has not ";
+		}
+		return "A Motorcycle has a " + this.numberOfWheels + " wheels. Its method of transport is " + this.methodOfTransport + ". It has a " + this.sizeOfEngine + "engine. It " + result + "got stabilisers";
+	}
+}

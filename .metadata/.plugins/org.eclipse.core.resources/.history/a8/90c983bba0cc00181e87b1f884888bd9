@@ -1,0 +1,14 @@
+package com.qa.Garage;
+
+public class Motorcycle extends Vehicle {
+
+	private double sizeOfEngine;
+	private boolean hasStablisers;
+
+	public Motorcycle(int numberofwheels, String methodoftransport, double sizeofengine, boolean hasstablisers) {
+		super(numberofwheels, methodoftransport);
+		this.sizeOfEngine = sizeofengine;
+		this.hasStablisers = hasstablisers;
+
+	}
+}

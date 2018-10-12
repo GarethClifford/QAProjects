@@ -1,0 +1,8 @@
+package com.qa.Garage;
+
+public class Motorcycle extends Vehicle {
+
+	public double sizeOfEngine;
+	
+
+}

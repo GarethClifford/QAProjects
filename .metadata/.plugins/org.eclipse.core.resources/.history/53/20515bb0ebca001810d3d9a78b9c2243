@@ -1,0 +1,25 @@
+
+public class Runner {
+
+	public static void main(String[] args) {
+		System.out.println(arithmeticAddition(10, 5));
+		System.out.println(arithmeticMultiplication(10, 5));
+		System.out.println(arithmeticSubtraction(10, 5));
+		System.out.println(arithmeticDivision(10, 5));
+	}
+
+	public static int arithmeticAddition(int a, int b) {
+		return a + b;
+		
+	}
+	public static int arithmeticMultiplication(int a, int b) {
+		return a * b;
+	}
+	public static int arithmeticSubtraction(int a, int b) {
+		return a - b;
+	}
+	public static int arithmeticDivision(int a, int b) {
+		return a / b;
+	}
+
+}

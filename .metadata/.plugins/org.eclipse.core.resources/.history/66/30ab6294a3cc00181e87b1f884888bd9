@@ -1,0 +1,14 @@
+package com.qa.Garage;
+
+public abstract class Vehicle {
+
+	private int numberOfWheels;
+	private String methodOfTransport;
+
+	public Vehicle(int numberofwheels, String methodoftransport) {
+		this.numberOfWheels = numberofwheels;
+		this.methodOfTransport = methodoftransport;
+
+	}
+
+}

@@ -1,0 +1,58 @@
+package com.qa.KnowledgeTesting;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Runner {
+
+	static List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5, 9, 8, 12);
+
+	public static void main(String[] args) {
+
+		System.out.println(taskFour());
+	}
+
+	public static String taskOne() {
+		int i;
+		String solutionOne = "";
+		for (i = 0; i < numbers.size(); i++) {
+			solutionOne = solutionOne + numbers.get(i) + System.lineSeparator();
+		}
+		return solutionOne;
+	}
+
+	public static String taskTwo() {
+		int i;
+		String solutionTwo = "";
+		for (i = 0; i < numbers.size(); i++) {
+			if (numbers.get(i) % 2 == 0) {
+				solutionTwo = solutionTwo + numbers.get(i) + System.lineSeparator();
+			}
+		}
+		return solutionTwo;
+	}
+
+	public static String taskThree() {
+		int i;
+		String solutionThree = "";
+		for (i = 0; i < numbers.size(); i++) {
+			solutionThree = solutionThree + numbers.get(i) * 10 + System.lineSeparator();
+		}
+		return solutionThree;
+	}
+
+	public static List<Integer> taskFour() {
+		int i;
+		String solutionFour = "";
+		for (i = 0; i < numbers.size(); i++) {
+			if (numbers.get(i + 1) < numbers.get(i)) {
+				numbers.remove(i);
+			}else if (numbers.get(i+1).equals(numbers.get(i))) {
+				continue;
+			}
+		}
+		solutionFour = solutionFour + numbers.get(0);
+		return numbers; 
+	}
+
+}

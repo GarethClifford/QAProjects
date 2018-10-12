@@ -1,0 +1,55 @@
+package com.qa.Goldilock;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+/**
+ * Hello world!
+ *
+ */
+public class Runner {
+	public static void main(String[] args) {
+
+		int Number = 1;
+		List<Chair> Table = new ArrayList<Chair>();
+
+		Goldilocks goldy = new Goldilocks(100, 80);
+
+		Table.add(new Chair(100,120));
+		Table.add(new Chair(297,90));
+		Table.add(new Chair(66,110));
+		Table.add(new Chair(257,113));
+		Table.add(new Chair(276,191));
+		Table.add(new Chair(280,129));
+		Table.add(new Chair(219,163));
+		Table.add(new Chair(254,193));
+		Table.add(new Chair(86,153));
+		Table.add(new Chair(206,107));
+		Table.add(new Chair(71,137));
+		Table.add(new Chair(94,40));
+		Table.add(new Chair(238,127));
+		Table.add(new Chair(52,146));
+		Table.add(new Chair(129,197));
+		Table.add(new Chair(144,59));
+		Table.add(new Chair(157,124));
+		Table.add(new Chair(210,59));
+		Table.add(new Chair(110,54));
+		Table.add(new Chair(268,119));
+		Table.add(new Chair(261,121));
+		Table.add(new Chair(12,189));
+		Table.add(new Chair(186,108));
+		Table.add(new Chair(174,21));
+		Table.add(new Chair(112,18));
+		Table.add(new Chair(54,90));
+		Table.add(new Chair(174,52));
+		Table.add(new Chair(16,129));
+		Table.add(new Chair(59,181));
+		Table.add(new Chair(290,123));
+		Table.add(new Chair(248,132));
+
+		System.out.println(Table.stream().filter(s -> goldy.canSit(s)).collect(Collectors.toList()));
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.qa.Goldilock;
+
+public class Chair {
+	private static int capacity;
+	private static int temp;
+
+	public Chair(int capacity, int temp) {
+		this.setCapacity(capacity);
+		this.setTemp(temp);
+	}
+
+	public static int getTemp() {
+		return temp;
+	}
+
+	public void setTemp(int temp) {
+		this.temp = temp;
+	}
+
+	public static int getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
+}

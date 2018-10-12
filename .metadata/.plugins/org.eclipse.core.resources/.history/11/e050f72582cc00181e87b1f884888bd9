@@ -1,0 +1,6 @@
+package com.qa.Garage;
+
+public class Plane extends Vehicle {
+	public int numberOfEngines;
+
+}

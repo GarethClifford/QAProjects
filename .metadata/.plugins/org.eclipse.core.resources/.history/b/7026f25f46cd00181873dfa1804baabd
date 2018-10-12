@@ -1,0 +1,11 @@
+package com.qa.Blackjack;
+
+import org.junit.Test;
+
+public class BlackjackTest {
+
+	@Test
+	public void testBlackjack() {
+
+	}
+}

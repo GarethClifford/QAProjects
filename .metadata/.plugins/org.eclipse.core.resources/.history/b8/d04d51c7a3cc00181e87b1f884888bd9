@@ -1,0 +1,25 @@
+package com.qa.Garage;
+
+public class Plane extends Vehicle {
+
+	private int numberOfEngines;
+	private boolean isItPrivate;
+
+	public Plane(int numberofwheels, String methodoftransport, int numberofengines, boolean isitprivate) {
+		super(numberofwheels, methodoftransport);
+		this.numberOfEngines = numberofengines;
+		this.isItPrivate = isitprivate;
+	}
+
+	@Override
+	public String toString() {
+		String result = "";
+		if (this.isItPrivate) {
+			result = "is ";
+		} else if (!this.isItPrivate) {
+			result = "is not ";
+		}
+
+		return "A Plane has " + this.numberOfEngines + " Engines. It " + result + "a private plane.";
+	}
+}

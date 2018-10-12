@@ -1,0 +1,23 @@
+
+public class UpdatedRunner {
+
+	public static void main(String[] args) {
+		basicMath(10, 5, "+");
+	}
+
+	public static double basicMath(double a, double b, String c) {
+
+		double d = 0;
+		if (c.equals("+")) {
+			d = a + b;
+		} else if (c.equals("-")) {
+			d = a - b;
+		} else if (c.equals("*")) {
+			d = a * b;
+		} else if (c.equals("/")) {
+			d = a / b;
+		}
+		return d;
+
+	}
+}

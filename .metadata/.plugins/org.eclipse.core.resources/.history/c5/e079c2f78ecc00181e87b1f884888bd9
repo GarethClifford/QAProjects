@@ -1,0 +1,9 @@
+package com.qa.Garage;
+
+public class Vehicle {
+	public int numberOfDoors;
+	public int numberOfWheels;
+	public String seatblets;
+	public String methodOfTransport;
+
+}

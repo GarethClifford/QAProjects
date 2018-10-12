@@ -1,0 +1,13 @@
+package com.qa.UpdatedCalculator;
+
+public class Runner {
+	public static void main(String[] args) {
+		Logic log = new Logic();
+
+		System.out.println("10 - 5 = " + log.operation(10, 5, log.subtraction));
+		System.out.println("10 + 5 = " + log.operation(10, 5, log.addition));
+		System.out.println("10 * 5 = " + log.operation(10, 5, log.multiplcation));
+		System.out.println("10 / 5 = " + log.operation(10, 5, log.division));
+	}
+
+}

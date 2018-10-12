@@ -1,0 +1,36 @@
+
+public class Calculator {
+
+	public static void calculate(double x, double y, double z) {
+		if (x * y == z) {
+			System.out.println(Math.round(x) + "*" + Math.round(y) + "=" + Math.round(z));
+		}
+		if (x + y == z) {
+			System.out.println(Math.round(x) + "+" + Math.round(y) + "=" + Math.round(z));
+		}
+		if (x - y == z) {
+			System.out.println(Math.round(x) + "-" + Math.round(y) + "=" + Math.round(z));
+		}
+		if (x / y == z) {
+			System.out.println(Math.round(x) + "/" + Math.round(y) + "=" + Math.round(z));
+		}
+	}
+
+	public static void calculator(int x, int y, int z) {
+		calculate(x, y, z);
+		calculate(x, z, y);
+		calculate(y, z, x);
+		calculate(y, x, z);
+		calculate(z, x, y);
+		calculate(z, y, x);
+
+	}
+
+	public static void calculator(int w, int x, int y, int z) {
+		calculator(x, y, z);
+		calculator(y, z, w);
+		calculator(z, w, x);
+		calculator(w, x, y);
+	}
+
+}

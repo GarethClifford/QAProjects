@@ -1,0 +1,36 @@
+package com.qa.Garage;
+
+import java.util.ArrayList;
+
+public class Garage {
+
+	private ArrayList<Vehicle> listOfVehicles;
+
+	public Garage() {
+		listOfVehicles = new ArrayList<>();
+	}
+
+	public void addVehicle(Vehicle v) {
+		listOfVehicles.add(v);
+	}
+
+	public void getBill() {
+		int i;
+		double bill = 0;
+		for (i = 0; i < listOfVehicles.size(); i ++) {
+			if (listOfVehicles.get(i) instanceof Plane) {
+				bill += ((Plane) listOfVehicles.get(i)).getNumberOfWheels() * 500;
+				bill += ((Plane) listOfVehicles.get(i)).getNumberOfEngines() * 150000;
+			}else if (listOfVehicles.get(i) instanceof Motorcycle) {
+				if ((listOfVehicles.get(i)).
+				bill += ((Motorcycle) listOfVehicles.get(i)).getNumberOfWheels() * 67;
+				bill += ((Motorcycle) listOfVehicles.get(i)).getSizeOfEngine() * 49.5;
+			}else if (listOfVehicles.get(i) instanceof Car) {
+				bill += ((Car) listOfVehicles.get(i)).getNumberOfWheels() * 35;
+				bill += ((Car) listOfVehicles.get(i)).isHasStablisers()
+			}
+		}
+
+	}
+
+}

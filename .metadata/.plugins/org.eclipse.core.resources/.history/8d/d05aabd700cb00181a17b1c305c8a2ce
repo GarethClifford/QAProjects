@@ -1,0 +1,29 @@
+
+public class UpdatedRunner {
+
+	public static void main(String[] args) {
+		arithmeticAddition(10, 5);
+		arithmeticMultiplication(10, 5);
+		arithmeticSubtraction(10, 5);
+		arithmeticDivision(10, 5);
+
+	}
+
+	public static double arithmeticAddition(double a, double b) {
+		return System.out.println("Addition " + arithmeticAddition(a, b));
+
+	}
+
+	public static double arithmeticMultiplication(double a, double b) {
+		return System.out.println("Multiplication " + arithmeticMultiplication(a, b));
+	}
+
+	public static double arithmeticSubtraction(double a, double b) {
+		return System.out.println("Subtraction " + arithmeticSubtraction(a, b));
+	}
+
+	public static double arithmeticDivision(double a, double b) {
+		return System.out.println("Division " + arithmeticDivision(a, b));
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.qa.Garage;
+
+public class Car extends Vehicle {
+
+	private double sizeOfEngine;
+	private int numberOfDoors;
+
+	public Car(int numberofwheels, String methodoftransport, double sizeofengine, int numberofdoors) {
+		super(numberofwheels, methodoftransport);
+		this.sizeOfEngine = sizeofengine;
+		this.numberOfDoors = numberofdoors;
+	}
+
+}

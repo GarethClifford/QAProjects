@@ -1,0 +1,39 @@
+package com.qa.Garage;
+
+public class Car extends Vehicle {
+
+	private String sizeOfEngine;
+	private int numberOfDoors;
+
+	public Car(int numberofwheels, String methodoftransport, String sizeofengine, int numberofdoors) {
+		super(numberofwheels, methodoftransport);
+		this.sizeOfEngine = sizeofengine;
+		this.numberOfDoors = numberofdoors;
+		this.getNumberOfWheels();
+		this.getMethodOfTransport();
+	}
+
+	@Override
+	public String toString() {
+		return "A Car has " + this.getNumberOfWheels() + " wheels. Its method of transport is "
+				+ this.getMethodOfTransport() + ". It has a " + this.sizeOfEngine + " engine. It has "
+				+ this.numberOfDoors + " doors.";
+	}
+
+	public String getSizeOfEngine() {
+		return sizeOfEngine;
+	}
+
+	public void setSizeOfEngine(String sizeOfEngine) {
+		this.sizeOfEngine = sizeOfEngine;
+	}
+
+	public int getNumberOfDoors() {
+		return numberOfDoors;
+	}
+
+	public void setNumberOfDoors(int numberOfDoors) {
+		this.numberOfDoors = numberOfDoors;
+	}
+
+}
