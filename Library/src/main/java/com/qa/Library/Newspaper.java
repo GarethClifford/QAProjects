@@ -8,8 +8,4 @@ public class Newspaper extends Item {
 		return paperdistributor;
 	}
 
-	public void setPaperdistributor(String paperdistributor) {
-		this.paperdistributor = paperdistributor;
-	}
-
 }

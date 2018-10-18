@@ -8,8 +8,4 @@ public class Dissertation extends Item {
 		return dissauthor;
 	}
 
-	public void setDissauthor(String dissauthor) {
-		this.dissauthor = dissauthor;
-	}
-
 }

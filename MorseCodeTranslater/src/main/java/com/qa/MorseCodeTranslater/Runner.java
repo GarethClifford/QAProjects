@@ -7,7 +7,7 @@ public class Runner {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(morseToEnglish(".-"));
+		System.out.println(englishToMorse("hello"));
 	}
 
 	public static String morseToEnglish(String morsetext) {
@@ -27,6 +27,17 @@ public class Runner {
 		System.out.println(morsetext);
 
 		return "";
+	}
+
+	public static char[] englishToMorse(String englishtext) {
+		HashMap<String, Character> map = new HashMap<String, Character>();
+
+		Character english[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
+				'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ' };
+		String morse[] = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".--", "-.-", ".-..", "--",
+				"-.", "---", ".--.", "--.-", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "/" };
+
+		return (englishtext.toCharArray());
 	}
 
 }

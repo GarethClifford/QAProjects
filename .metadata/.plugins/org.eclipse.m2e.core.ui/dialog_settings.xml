@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Admin\Desktop\QAProjects\Library"/>
 			<item value="C:\Users\Admin\Desktop\QAProjects\Reversal\src\Runner.java"/>
 			<item value="C:\Users\Admin\eclipse-workspace\Goldilock\src\main\java\com\qa\Goldilock\Runner.java"/>
 			<item value="C:\Users\Admin\eclipse-workspace\Library\src\test\java\com\qa\Library\LibraryTest.java"/>
@@ -63,6 +64,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.qa.LibraryNumberTwo"/>
 			<item value="com.qa.MorseCodeTranslater"/>
 			<item value="com.qa.dfgdfghdf"/>
 		</list>
@@ -70,6 +72,7 @@
 			<item value="com.qa"/>
 		</list>
 		<list key="artifactId">
+			<item value="LibraryNumberTwo"/>
 			<item value="MorseCodeTranslater"/>
 			<item value="dfgdfghdf"/>
 		</list>

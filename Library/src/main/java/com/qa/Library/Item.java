@@ -1,53 +1,49 @@
 package com.qa.Library;
 
-public class Item extends Library {
+public abstract class Item extends Library {
 
-	private String itemname;
-	private String itemlocation;
-	private String itemuid;
+	private String itemName;
+	private String itemLocation;
+	private String itemUniqueID;
+	String message;
 
-	public static void addItem() {
+	public String addItem(String itemtype, String bookname, String bookauthor) {
+		Book books = new Book();
+		if (itemtype.equals("Book")) {
 
+			message = books.getBookName() + " written by " + books.getBookAuthor()
+					+ " has been added to the book section of the library.";
+		}
+
+		return message;
 	}
 
-	public static void checkOutItem() {
-
+	public String checkOutItem() {
+		return "";
 	}
 
-	public static void checkInItem() {
-
+	public String checkInItem() {
+		return "";
 	}
 
-	public static void removeItem() {
-
+	public String removeItem() {
+		return "";
 	}
 
-	public static void updateItem() {
-
+	public String updateItem() {
+		return "";
 	}
 
 	public String getItemname() {
-		return itemname;
-	}
-
-	public void setItemname(String itemname) {
-		this.itemname = itemname;
+		return itemName;
 	}
 
 	public String getItemlocation() {
-		return itemlocation;
-	}
-
-	public void setItemlocation(String itemlocation) {
-		this.itemlocation = itemlocation;
+		return itemLocation;
 	}
 
 	public String getItemuid() {
-		return itemuid;
-	}
-
-	public void setItemuid(String itemuid) {
-		this.itemuid = itemuid;
+		return itemUniqueID;
 	}
 
 }
