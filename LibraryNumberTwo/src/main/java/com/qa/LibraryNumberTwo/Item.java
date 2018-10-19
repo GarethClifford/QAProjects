@@ -3,12 +3,12 @@ package com.qa.LibraryNumberTwo;
 public abstract class Item {
 
 	private int initialID = 1;
-	private String itemName;
+	private String itemType;
 	private int itemUniqueID;
 
-	public Item(String itemname) {
+	public Item(String itemtype) {
 		this.itemUniqueID = initialID;
-		this.itemName = itemname;
+		this.itemType = itemtype;
 
 		initialID++;
 	}
@@ -17,8 +17,8 @@ public abstract class Item {
 		return initialID;
 	}
 
-	public String getItemName() {
-		return itemName;
+	public String getItemType() {
+		return itemType;
 	}
 
 	public int getItemUniqueID() {
